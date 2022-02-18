@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Serif&display=swap');
+
+/* Common Style */
+*{
+    box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;
+}
+h1, h4, h5{
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+}
+label{
+    font-size: 20px;
+}
+h1{
+    color: #31A5AC;
+}
+/* Image area */
+.first-half img{
+    border-radius: 10px;
+   width: 100%;
+   height: 80vh;
+}
+/* Income Area */
+.second-half{
+    box-shadow: 10px 10px 40px 10px #DCDCDC;
+    background-color: #F8F8F8;
+    border-radius: 5px;
+}
+.input-Field{
+    background-color: #DCDCDC;
+    border: none;
+    width: 229px;
+    height: 44px;
+    border-radius: 5px;
+}
+
+
+/* Notify section */
+.notify{
+    display: none;
+}

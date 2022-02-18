@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Expenditure Calculation</title>
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Custom CSS link -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main class="container">
+        <h1 class="text-center my-4">Monthly Expenditure Calculation💰 </h1>
+        <div class="row d-flex justify-content-between">
+            <!-- Image Area -->
+            <div class="first-half col-md-12 col-lg-6">
+                <div>
+                    <img src="./images/calculation.jpg" alt="">
+                </div>
+            </div>
+            <!-- Income Area -->
+            <div class="second-half col-md-12 col-lg-6 d-flex flex-column ">
+                <h5 class="mt-4">Income</h5>
+                <div class="row">
+                    
+                    <label class="col-lg-2" for="">Income:</label>
+                    <div class="col-lg-8">
+                        <input id="income-input" class="input-Field" type="text" placeholder="Enter income amount">
+                        <p id="income-fail" class="notify text-danger rounded w-75 mt-2"><small>❌ Please Enter a positive number</small></p>
+                    </div>
+                    
+                </div>
+                <h5>Expenses</h5>
+                <div class="mb-2 row">
+                    <label class="col-lg-2">Food:</label>
+                    <div class="col-lg-10">
+                        <input id="food-input" class="input-Field" type="text" placeholder="Enter food expense">
+                        <p id="food-fail" class="notify text-danger rounded w-75 mt-2"><small>❌ Please Enter a positive number</small></p>
+                    </div>
+                </div>
+                <div class="mb-2 row">
+                    <label class="col-lg-2" for="">Rent:</label>
+                    <div class="col-lg-10">
+                        <input id="rent-input" class="input-Field" type="text" placeholder="Enter rent expnese">
+                        <p id="rent-fail" class="notify text-danger rounded w-75 mt-2"><small>❌ Please Enter a positive number</small></p>
+                    </div>
+                </div>
+                <div class="mb-2 row">
+                    <label class="col-lg-2" for="">Cloths:</label>
+                    <div class="col-lg-10">
+                        <input id="cloth-input" class="input-Field" type="text" placeholder="Enter cloth expense">
+                        <p id="cloth-fail" class="notify text-danger rounded w-75 mt-2"><small>❌ Please Enter a positive number</small></p>
+                    </div>
+                    
+                </div>
+                <div>
+                    <button id="calculate-btn" class="btn btn-primary">Calculate</button>
+                </div>
+                <div>
+                    <h5 class="py-2">Total Expenses:<span id="total-expenses">00</span></h5>
+                    <small id="expense-alert" class="notify fw-bolder text-danger rounded mt-2">You do not have sufficient balance to expense</small>
+                <h5>Balance: <span id="rest-balance">00</span></h5>
+                </div>
+                <div class="d-flex justify-content-start align-items-center">
+                    <label for="">Save:</label>
+                    <input id="save-input" class="w-25 mx-2" type="text"> 
+                     <span class="mx-2">%</span>
+                    <button id="save-btn" class="btn btn-primary px-4">Save</button>
+                </div>
+                <div>
+                    <h5>Saving Amount: <span id="saving-amount">00</span></h5>
+                    <small id="save-alert" class="notify fw-bolder text-danger rounded w-75 mt-2">You do not have sufficient balance to save</small>
+                <h5>Remaining Balance: <span id="balance-remaining">00</span></h5>
+                </div>
+            </div>
+
+        </div>
+        <!-- <div>
+            <div class="notify-section w-50">
+                <p id="income-fail" class="notify bg-danger text-white p-3 rounded">❌ Please Enter a positive number in income input field</p>
+                <p id="food-fail" class="notify">❌ Please Enter a positive number in food input field</p>
+                <p id="rent-fail" class="notify">❌ Please Enter a positive number in rent input field</p>
+                <p id="cloth-fail" class="notify">❌ Please Enter a positive number in cloths input field</p>
+            </div>
+        </div> -->
+
+    </main>
+
+
+    <!-- Bootstrap JS link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
